@@ -29,7 +29,7 @@ function PostDetails(props) {
                             <Box borderRight="1px solid #B8B8B8" mt={1} mb={1} mx={2} display={{ base: "none", md: 'block' }}></Box>
                             <Text color="#343434" fontSize="xs">{viewpost.createdAt}</Text>
                         </Flex>
-                        <Box ml={{ base: "-2.75rem", md: 0 }}>
+                        <Box ml={{ base: "-2.75rem", md: 0 }} w="100%">
                             <Text my={4} >{viewpost.info}</Text>
                             {/* <Box w={{ base: "280px", md: "400px" }} h="200px" borderRadius="md" backgroundColor="tomato" ></Box> */}
                         </Box>
