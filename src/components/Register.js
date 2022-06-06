@@ -61,7 +61,7 @@ export class Register extends Component {
                 answer: this.state.answer,
               }
               console.log(data)
-              Axios.post("http://localhost:8080/register",data)
+              Axios.post("https://urblog.herokuapp.com//register",data)
                 .then((res) => {
                   console.log(res.data);
                   if (res.data === "Username Already Exist") {
