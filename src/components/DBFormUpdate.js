@@ -45,7 +45,7 @@ function DbFormUpdate(props) {
         // post update 
         let data = JSON.parse(Cookie.get("userData"))
         let post = JSON.parse(Cookie.get("userClick"))
-        Axios.put("http://localhost:8080/update",{id: post.id, title:name, info:content,username:post.author})
+        Axios.put("https://urblog.herokuapp.com/update",{id: post.id, title:name, info:content,username:post.author})
         .then((res)=>{
           console.log(res.data,'post updated')
           toast.success("post updated successfully", { position: toast.POSITION.TOP_CENTER });
