@@ -10,7 +10,7 @@ function History(props) {
   toast.configure()
   const [data,setData]=useState([])
   useEffect(() => {
-    Axios.get("http://localhost:8080/history").then((res)=>{
+    Axios.get("https://urblog.herokuapp.com/history").then((res)=>{
       console.log(res.data)
         setData(res.data)
     })
