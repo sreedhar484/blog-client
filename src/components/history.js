@@ -69,7 +69,6 @@ function History(props) {
           data.map((data,idx)=>(
                 <Grid key={idx}
                 w="100%"
-                h="50px"
                 fontSize="14px"
                 templateColumns="repeat(4, 1fr)"
                 gap={2}
@@ -86,7 +85,6 @@ function History(props) {
             data.author==userData.userName)).map((data,idx)=>(
                 <Grid key={idx}
                 w="100%"
-                h="50px"
                 fontSize="14px"
                 templateColumns="repeat(4, 1fr)"
                 gap={2}
