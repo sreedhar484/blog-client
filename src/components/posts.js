@@ -47,7 +47,7 @@ function Posts(props) {
                             <Flex width="100%" >
                             <Box backgroundColor={color[Math.floor(Math.random()*color.length)]} borderRadius="50%" border="2px" w="50px" h="50px" mr={3} alignItems="center">
                             <Text mx="15px" mt="4px" fontSize="25px" fontWeight="600">
-                                {userData.userName==undefined?"":userData.userName[0].toUpperCase()}
+                                {data.author==undefined?"":data.author[0].toUpperCase()}
                             </Text>
                         </Box>
                                 <Flex width="100%" direction="column">
@@ -89,7 +89,7 @@ function Posts(props) {
                               <Flex width="100%" >
                               <Box backgroundColor={color[Math.floor(Math.random()*color.length)]} borderRadius="50%" border="2px" w="50px" h="50px" mr={3} alignItems="center">
                             <Text mx="15px" mt="4px" fontSize="25px" fontWeight="600">
-                                {userData.userName==undefined?"":userData.userName[0].toUpperCase()}
+                                {data.author==undefined?"":data.author[0].toUpperCase()}
                             </Text>
                         </Box>
                                   <Flex width="100%" direction="column">
