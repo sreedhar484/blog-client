@@ -18,7 +18,7 @@ function Posts(props) {
     const onDelete=()=>{
         // userclick coockie post id based delete
         let post = JSON.parse(Cookie.get("userClick"))
-        Axios.delete("http://localhost:8080/delete/"+post.id)
+        Axios.delete("https://urblog.herokuapp.com/delete/"+post.id)
         .then((res)=>{
           console.log(res.data,'post deleted')  
           props.onRefresh()
@@ -30,7 +30,7 @@ function Posts(props) {
         // onapprove change post status to approved
         //userClick cookie 
         let post = JSON.parse(Cookie.get("userClick"))
-          Axios.post("http://localhost:8080/approve",{id:post.id,approve:1,title:post.titlenew,info:post.infonew})
+          Axios.post("https://urblog.herokuapp.com/approve",{id:post.id,approve:1,title:post.titlenew,info:post.infonew})
           .then((res)=>{
             console.log(res.data,'post approved')
             props.onRefresh()
