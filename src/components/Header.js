@@ -25,9 +25,9 @@ function Header(props) {
           d={["none", "none", "none", "flex"]}
           justifyContent="space-between"
         >
-          <Box>
-            <Text ml="40px" color="#FFFFFF">Deutch Bank</Text> 
-            <Image src="https://pnptc-media.s3.amazonaws.com/images/Deutsche-Bank-Logo.max-600x480.png"  width="50px" height="30px"ml="30px" />
+          <Box d="flex" mt="15px" fontSize='25px'>
+            <Text ml="30px" color="#FFFFFF">Deutch Bank</Text> 
+            <Image src="https://pnptc-media.s3.amazonaws.com/images/Deutsche-Bank-Logo.max-600x480.png"  width="50px" height="30px"ml="15px" />
           </Box>
           <Box d="flex">
             <Box my="7px" w="80px" color="#FFFFFF">
