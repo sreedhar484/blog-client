@@ -223,9 +223,9 @@ export class Login extends Component {
                 {this.state.finalerr}
               </Text>
           </form>
-          <Link to="/register">
-              <Text mb="40%">Don't have an account</Text>
-            </Link>
+          <Box>
+              <Text mb="40%">Suggesion : This website is compatable for all devices can u please chck with all compatable devices.</Text>
+            </Box>
         </Box>
       </Box>
     </Box>
