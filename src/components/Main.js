@@ -53,7 +53,7 @@ class Main extends Component {
     let data = JSON.parse(Cookie.get("userData"))
     console.log(data)
 
-    Axios.post("http://localhost:8080/posts",{acctype:data.accType,username: data.userName})
+    Axios.post("https://urblog.herokuapp.com/posts",{acctype:data.accType,username: data.userName})
     .then((res)=>{
       console.log(res.data,'posts from back')
       this.setState({data:res.data})
