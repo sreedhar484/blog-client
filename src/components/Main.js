@@ -80,7 +80,7 @@ class Main extends Component {
     this.setState({ search: event.target.value }, () => {
       if (this.state.search.length > 0) {
         let arr1 = this.state.data.filter((ele) =>
-          ele.title.toLowerCase().startsWith(this.state.search.toLowerCase())
+          ele.title.toLowerCase().includes(this.state.search.toLowerCase())
         );
         let arr = [...arr1];
         var resArr = [];
