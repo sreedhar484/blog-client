@@ -25,7 +25,7 @@ function PostDetails(props) {
                             <Text color="#265182" fontWeight="600" fontSize="md">{viewpost.title}</Text>
                         </Flex>
                         <Flex mt={0} flexDir={{ base: 'column', md: "row" }}>
-                            <Text color="#343434" fontSize="xs">{viewpost.username}</Text>
+                            <Text color="#343434" fontSize="xs">{viewpost.author}</Text>
                             <Box borderRight="1px solid #B8B8B8" mt={1} mb={1} mx={2} display={{ base: "none", md: 'block' }}></Box>
                             <Text color="#343434" fontSize="xs">{viewpost.createdAt}</Text>
                         </Flex>
